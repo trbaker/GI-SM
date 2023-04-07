@@ -3,22 +3,22 @@
 function start() {
 // code
 const url = new URL(window.location.toLocaleString());
-document.getElementById("teaherform").action = url;
 const params = new URLSearchParams(url.search);
 const q = params.get('q');
-window.open(q)
+// window.open(q)
+document.getElementById("teaherform").action = q;
 }
 </script>
 
 <body>
 <font size="+1">
 <p>
-A two-page teacher's guide that includes the 5-E instructional activity, learning objectives, NGSS links, tech tips, and textbook linkages.
+...A two-page teacher's guide that includes the 5-E instructional activity, learning objectives, NGSS links, tech tips, and textbook linkages.
 </p>
 
   <button type="button" onclick="start();"> Download Teacher PDF</button>
-<form id=teacherform action="">
-<input type="submit"></form>
+<form id="teacherform" action="">
+<input type="submit" value="DL the PDF"></form>
 
   </body></html>
   
