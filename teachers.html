@@ -5,7 +5,7 @@ function start() {
 const url = new URL(window.location.toLocaleString());
 const params = new URLSearchParams(url.search);
 const q = params.get('q');
-// document.getElementById("b2").innerHTML += q;
+document.getElementById("b2").innerHTML += q;
 window.open(q)
 }
 </script>
@@ -18,5 +18,5 @@ A two-page teacher's guide that includes the 5-E instructional activity, learnin
 
   <button type="button" onclick="start();"> Download Teacher PDF</button>
 
-
+  <div id="b2" style="color: #111"></div>
   </body></html>
