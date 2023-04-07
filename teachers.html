@@ -3,10 +3,9 @@
 function start() {
 // code
 const url = new URL(window.location.toLocaleString());
-// document.getElementById("b2").innerHTML += url;
 const params = new URLSearchParams(url.search);
 const q = params.get('q');
-document.getElementById("b2").innerHTML += q;
+// document.getElementById("b2").innerHTML += q;
 window.open(q)
 }
 </script>
