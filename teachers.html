@@ -3,9 +3,9 @@
 function start() {
 // code
 const url = new URL(window.location.toLocaleString());
+document.getElementById("teaherform").action = url;
 const params = new URLSearchParams(url.search);
 const q = params.get('q');
-document.getElementById("b2").innerHTML += q;
 window.open(q)
 }
 </script>
@@ -13,10 +13,13 @@ window.open(q)
 <body>
 <font size="+1">
 <p>
-..A two-page teacher's guide that includes the 5-E instructional activity, learning objectives, NGSS links, tech tips, and textbook linkages.
+A two-page teacher's guide that includes the 5-E instructional activity, learning objectives, NGSS links, tech tips, and textbook linkages.
 </p>
 
   <button type="button" onclick="start();"> Download Teacher PDF</button>
+<form id=teacherform action="">
+<input type="submit"></form>
 
-  <div id="b2" style="color: #111"></div>
   </body></html>
+  
+  
