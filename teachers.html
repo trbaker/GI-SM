@@ -1,18 +1,23 @@
 <html>
 <script>
-document.getElementById("demo").innerHTML = 5 + 6;
+function start() {
+// code
+const url = new URL(window.location.toLocaleString());
+// document.getElementById("b2").innerHTML += url;
+const params = new URLSearchParams(url.search);
+const q = params.get('q');
+document.getElementById("b2").innerHTML += q;
+window.open(q)
+}
 </script>
-  
+
+<body>
 <font size="+1">
 <p>
-.A two-page teacher's guide that includes the 5-E instructional activity, learning objectives, NGSS links, tech tips, and textbook linkages. 
+A two-page teacher's guide that includes the 5-E instructional activity, learning objectives, NGSS links, tech tips, and textbook linkages.
 </p>
-<form target="_new" action="https://education.maps.arcgis.com/sharing/rest/content/items/e738a0f485f1487baa5160ee118b4fa3/data">
-  <input type='submit' value="Download the PDF">
-</form>
-  
-  <div style="color: #000eee" id="demo"></div>
-  <div>
-    <script>document.write(5 + 6)</script>
-  </div>
+
+  <button type="button" onclick="start();"> Download Teacher PDF</button>
+
+
   </body></html>
