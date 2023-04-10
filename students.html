@@ -6,9 +6,10 @@ const url = new URL(window.location.toLocaleString());
 const params = new URLSearchParams(url.search);
 const q = params.get('q');
 const q2 =  params.get('q2');
+ const q3 =  params.get('q3');
 // window.open(q)
 document.getElementById("box1").innerHTML = q;
- document.getElementById("box2").innerHTML = q2; 
+ document.getElementById("box2").innerHTML = "<a href='" + q2 + "/>Google Docs</a> | <a href='" + q3 + "/>Word</a>"; 
 }
 </script>
 <style>
