@@ -9,7 +9,21 @@ const q = params.get('q');
 document.getElementById("box2").innerHTML = q;
 }
 </script>
-
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+        
 <body onLoad="start();">
 <p style="font-size: 18px; font-family: Times;
         font-weight: 400;
@@ -18,7 +32,8 @@ document.getElementById("box2").innerHTML = q;
 <img align="right" alt="MapMaker" src="mapmaker.png">
 Launch the map in a new window or tab in your browser by pressing the button below. The image on the right shows the startup appearance of the mapping tool.  
 <br /><br />
-You can also provide students with the URL: https://esriurl.com/mapmaker 
+You can also provide students with the URL: https://esriurl.com/mapmaker_sb 
 <br /><br />
  Launch the map. Press <b>Open Map</b> and search for: <div id="box2" style="margin: 0 0 0 0; font-weight: bold;"></div></p>
+  <button class="button button2" type="button" onclick="location.href='https://esriurl.com/mapmaker_sb';" > Launch map </button>
 </body></html>
