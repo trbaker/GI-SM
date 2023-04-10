@@ -1,0 +1,53 @@
+<html>
+<script>
+function start() {
+// code
+const url = new URL(window.location.toLocaleString());
+const params = new URLSearchParams(url.search);
+const q = params.get('q');
+const q2 =  params.get('q2');
+// window.open(q)
+document.getElementById("box1").innerHTML = q;
+ document.getElementById("box2").innerHTML = q2; 
+}
+</script>
+<style>
+.button {
+  font-family: 'Noto Serif', serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+        
+<body onLoad="start();">
+<p style="font-size: 20px; font-family: 'Noto Serif', serif;
+        font-weight: 400;
+        font-style: normal;
+        display: block; 
+       line-height: 1.5;">
+
+  <b>Student self-check resource</b>
+  <br /><br />
+Students can read this short storymap and answer self-check, multiple choice questions.  No scores are recorded or shared. These resources are ideal for reinforcement of concepts.
+  <br /><br />
+Share the URL with students:  
+  <div id="box1" style="margin: 0 0 0 0; font-weight: bold;"></div>
+  
+  <br /><br />
+  <b>Student worksheets</b>
+  <br /><br />
+Download and distribute student worksheets to support independent study, homework, or  quizzes. The worksheet questions are aligned to the questions presented in the teacher guide.
+  <div id="box2" style="margin: 0 0 0 0; font-weight: bold;"></div>
+<br /><br />
+
+  
+  <button class="button button2" type="button" onclick="parent.open('')">  </button>
+</body></html>
