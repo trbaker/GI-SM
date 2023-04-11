@@ -1,0 +1,42 @@
+<html>
+<script>
+function start() {
+// code
+const url = new URL(window.location.toLocaleString());
+const params = new URLSearchParams(url.search);
+const q = params.get('q');
+const q2 =  params.get('q2');
+ const q3 =  params.get('q3');
+ const q4 =  params.get('q4')
+// window.open(q)
+document.getElementById("box1").innerHTML = "<a target='new' href='https://classroom.google.com/share?url=" + q + "'/>Optionally, add the student worksheet</a> directly to Google Classroom.";
+ document.getElementById("box2").innerHTML = "You may also <a target='new' href='https://classroom.google.com/share?url=" + q2 + "'/>push the map directly</a> into  Google Classroom."; 
+}
+</script>
+<style>
+.button {
+  font-family: 'Noto Serif', serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+</style>
+        
+<body onLoad="start();">
+<p style="font-size: 20px; font-family: 'Noto Serif', serif;
+        font-weight: 400;
+        font-style: normal;
+        display: block; 
+       line-height: 1.5;">
+
+<div id="box1" style="font-weight: 600;"></div></p>
+  
+<div id="box2" style="font-weight: 600;"></div>
+</body></html>
