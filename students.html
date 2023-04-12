@@ -12,7 +12,7 @@ const q2 =  params.get('q2');
 // window.open(q)
 document.getElementById("box1").innerHTML = q;
 // document.getElementById("box2").innerHTML = "Download or view in: <a target='new' href='" + q2 + "'/>Docs</a>"; 
-document.getElementById("btna").href = "https://esriurl.com/mapmaker_sb";
+document.getElementById("btna").href = q2;
 }
 </script>
 <link rel="stylesheet" type="text/css" href="https://trbaker.github.io/GI-SM/style.css">
@@ -31,7 +31,7 @@ Students can read this short storymap and answer self-check, multiple choice que
   <br /><br />
 Download and distribute student worksheets to support independent study, homework, or  quizzes. The worksheet 
  questions are aligned to the questions presented in the teacher guide.<br />
- 
- <a id="btna" href="">
+ <br /><br />
+ <a id="btna" target="new" href="">
  <button class="button button2" type="button" id="btn"> Go to Docs </button></a>
 </body></html>
