@@ -9,15 +9,15 @@ const q2 =  params.get('q2');
  const q3 =  params.get('q3');
  const q4 =  params.get('q4')
 // window.open(q)
-document.getElementById("box1").innerHTML = "<a target='new' href='https://classroom.google.com/share?url=" + q + "'/>Optionally, add the student worksheet</a> directly to Google Classroom.";
- document.getElementById("box2").innerHTML = "You may also <a target='new' href='https://classroom.google.com/share?url=" + q2 + "'/>push the map directly</a> into  Google Classroom."; 
+document.getElementById("box1").innerHTML = "<a target='new' href='https://classroom.google.com/share?url=" + q + "'/></a> ";
+ document.getElementById("box2").innerHTML = "<a target='new' href='https://classroom.google.com/share?url=" + q2 + "'/></a>"; 
 }
 </script>
 <link rel="stylesheet" href="http://trbaker.github.io/GI-SM/style.css">
         
 <body onLoad="start();">
 <p class="txt">
-
+Add the student worksheet directly to Google Classroom. Alternatively, you may also push the map directly  into  Google Classroom.
 <div class="txt" id="box1"></div></p>
   
 <div class="txt" id="box2"></div>
